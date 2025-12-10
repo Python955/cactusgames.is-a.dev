@@ -1,36 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>My Website</title>
-  <style>
-    h1.rainbow {
-      font-size: 120px;
-      background: linear-gradient(
-        to right,
-        red, orange, yellow, green, blue, indigo, violet
-      );
-      background-size: 400% auto;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-    
-      animation: rainbowAnimation 6s linear infinite;
-    }
-    
-    @keyframes rainbowAnimation {
-      0%   { background-position: 0%   0; }
-      100% { background-position: 100% 0; }
-    }
-    body {
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <h1 class="rainbow">Cactus Games/h1>
-  <p>Welcome to the cactusgames website!</p>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,7 +9,13 @@
         height: 100%;
         overflow: hidden;
     }
+    @font-face {
+      font-family: 'headerfont';
+      src: url('Brush Kencur DEMO.ttf') format('truetype');
+    }
+
     h1.rainbow {
+        font-family: 'headerfont', sans-serif;
         font-size: 120px;
         background: linear-gradient(
           to right,
