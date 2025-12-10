@@ -13,30 +13,38 @@
       font-family: 'headerfont';
       src: url('Brush Kencur DEMO.ttf') format('truetype');
     }
-
+    /* Fade-in animation */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Rainbow animated header */
     h1.rainbow {
-        font-family: 'headerfont', sans-serif;
         font-size: 120px;
+        font-family: 'headerfont', sans-serif; /* or your custom font */
         background: linear-gradient(
-          to right,
-          red, orange, yellow, green, blue, indigo, violet
+            to right,
+            red, orange, yellow, green, blue, indigo, violet
         );
         background-size: 400% auto;
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        position: relative;
-        z-index: 1;
-        text-align: center;
-        margin-top: 200px;
-      
-        animation: rainbowAnimation 6s linear infinite;
-      }
-      
-      @keyframes rainbowAnimation {
-        0%   { background-position: 0%   0; }
-        100% { background-position: 100% 0; }
-      }
+    
+        animation: rainbowAnimation 6s linear infinite,
+                   fadeIn 2s ease-out forwards;
+    
+        margin: 0;
+        padding-top: 150px;
+    }
+
 
     /* Video covers the whole screen */
     #bg-video {
