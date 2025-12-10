@@ -36,10 +36,17 @@
         to right,
         red, orange, yellow, green, blue, indigo, violet
       );
+      background-size: 400% auto;
       background-clip: text;
-      -webkit-background-clip: text; /* needed for some browsers */
-      color: transparent;            /* hide the “real” color so gradient shows */
-      text-align: center;
+      -webkit-background-clip: text;
+      color: transparent;
+    
+      animation: rainbowAnimation 6s linear infinite;
+    }
+    
+    @keyframes rainbowAnimation {
+      0%   { background-position: 0%   0; }
+      100% { background-position: 100% 0; }
     }
     body {
       text-align: center;
