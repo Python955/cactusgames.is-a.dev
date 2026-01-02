@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FlorhamParkMC Status</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.status-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 300px;
+}
+
+#status {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#players {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#motd {
+    font-size: 16px;
+    opacity: 0.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="status-box">
+    <div id="status">Checking server...</div>
+    <div id="players"></div>
+    <div id="motd"></div>
+</div>
+
+<script>
+const SERVER = "173.70.88.20:25565";
+
+function checkStatus() {
+    fetch(`https://api.mcsrvstat.us/2/${SERVER}`)
+        .then(res => res.json())
+        .then(data => {
+            const statusEl = document.getElementById("status");
+            const playersEl = document.getElementById("players");
+            const motdEl = document.getElementById("motd");
+
+            if (data.online) {
+                statusEl.textContent = "🟢 Server is ONLINE";
+                statusEl.style.color = "lime";
+
+                playersEl.textContent =
+                    `Players: ${data.players.online}/${data.players.max}`;
+
+                if (data.motd && data.motd.clean) {
+                    motdEl.textContent = data.motd.clean.join(" ");
+                } else {
+                    motdEl.textContent = "";
+                }
+
+            } else {
+                statusEl.textContent = "🔴 Server is OFFLINE";
+                statusEl.style.color = "red";
+                playersEl.textContent = "";
+                motdEl.textContent = "";
+            }
+        })
+        .catch(() => {
+            document.getElementById("status").textContent =
+                "⚠️ Unable to reach server";
+        });
+}
+
+checkStatus();
+setInterval(checkStatus, 10000);
+</script>
+
+</body>
+</html>
 
