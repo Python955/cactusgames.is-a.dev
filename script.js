@@ -3,3 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "florhamparkmc.html";
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("CactusHubBtn").addEventListener("click", () => {
+        window.location.href = "florhamparkmc.html";
+    });
+});
+
