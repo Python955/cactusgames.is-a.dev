@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="JFPMC.css">
+<link rel="stylesheet" href="style.css">
 <title>Cactus Hub</title>
 </head>
 <body style="background-color: powderblue;">
@@ -14,12 +15,25 @@
         font-family: 'paragraph';
         src: url('Minaret.ttf') format('truetype');
       }
+    .content {
+        position: relative;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: sans-serif;
+    }
 </style>
 <body>
 
 <h1 style="font-family: 'headerfont'; font-size: 60px;">The Cactus Hub</h1>
 <p style="font-family: 'paragraph'; font-size: 50px;">Dowload the Cactus Hub today.</p>
-    <p style="font-family: 'paragraph'; font-size: 30px;">This hub is in open beta but this is what I want it to have:<br>Download games and publish games<br>a special file format that will be able to be ran through the hub.<br>OpenXR support</p>
-
+<p style="font-family: 'paragraph'; font-size: 30px;">This hub is in open beta but this is what I want it to have:<br>Download games and publish games<br>a special file format that will be able to be ran through the hub.<br>OpenXR support</p>
+<div class="content">
+    <div class="buttons">
+        <button class="btn" onclick="location.href='join.html'">Download</button>
+    </div>
+</div>
 </body>
 </html>
