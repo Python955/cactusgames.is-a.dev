@@ -1,0 +1,50 @@
+@keyframes rainbowAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+@font-face {
+    font-family: 'headerfont';
+    src: url('Fonts/Brush.ttf') format('truetype');
+}
+h1.rainbow {
+    font-size: 120px;
+    font-family: 'headerfont', sans-serif;
+    background: linear-gradient(
+        to right,
+        red, orange, yellow, green, blue, indigo, violet, red,
+        orange, yellow, green, blue, indigo, violet, red
+    );
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    animation: rainbowAnimation 6s linear infinite,
+                fadeIn 2s ease-out forwards;
+
+    margin: 0;
+    padding-top: 150px;
+}
+p.rainbow {
+    font-size: 60px;
+    font-family: 'headerfont', sans-serif;
+    background: linear-gradient(
+        to right,
+        red, orange, yellow, green, blue, indigo, rgb(216, 19, 157), red,
+        orange, yellow, green, blue, indigo, rgb(216, 19, 157), red
+    );
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    animation: rainbowAnimation 6s linear infinite,
+                fadeIn 2s ease-out forwards;
+
+    margin: 0;
+    padding-top: 150px;
+}
