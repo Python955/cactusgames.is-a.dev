@@ -19,6 +19,7 @@
     src: url('../Fonts/LowresPixel-Regular.otf') format('opentype');
 }
 h1.rainbow {
+    text-align: center;
     font-size: 120px;
     font-family: 'CactusOSHeader', sans-serif;
     background: linear-gradient(
@@ -38,6 +39,7 @@ h1.rainbow {
     padding-top: 150px;
 }
 p.rainbow {
+    text-align: center;
     font-size: 60px;
     font-family: 'CactusOS-Para', sans-serif;
     background: linear-gradient(
