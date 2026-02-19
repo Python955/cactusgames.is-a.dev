@@ -8,11 +8,15 @@
 }
 @font-face {
     font-family: 'headerfont';
-    src: url('Fonts/Brush.ttf') format('truetype');
+    src: url('../Fonts/Brush.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CactusOSHeader';
+    src: url('../Fonts/ka1.ttf') format('truetype');
 }
 h1.rainbow {
     font-size: 120px;
-    font-family: 'headerfont', sans-serif;
+    font-family: 'CactusOSHeader', sans-serif;
     background: linear-gradient(
         to right,
         red, orange, yellow, green, blue, indigo, violet, red,
