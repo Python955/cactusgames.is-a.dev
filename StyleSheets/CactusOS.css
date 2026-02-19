@@ -14,6 +14,10 @@
     font-family: 'CactusOSHeader';
     src: url('../Fonts/ka1.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'CactusOS-Para';
+    src: url('../Fonts/LowresPixel-Regular.otf') format('opentype');
+}
 h1.rainbow {
     font-size: 120px;
     font-family: 'CactusOSHeader', sans-serif;
@@ -35,7 +39,7 @@ h1.rainbow {
 }
 p.rainbow {
     font-size: 60px;
-    font-family: 'headerfont', sans-serif;
+    font-family: 'CactusOS-Para', sans-serif;
     background: linear-gradient(
         to right,
         red, orange, yellow, green, blue, indigo, rgb(216, 19, 157), red,
