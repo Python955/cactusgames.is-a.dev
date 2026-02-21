@@ -13,4 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "Sites/CactusOS.html";
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("CactusMusicBtn").addEventListener("click", () => {
+        window.location.href = "Sites/CactusGamesMusic.html";
+    });
+});
 

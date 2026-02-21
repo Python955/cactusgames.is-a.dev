@@ -103,7 +103,6 @@ p.rainbow {
 .buttons {
     display: flex;
     gap: 20px;
-    justify-content: center;
 }
 
 .btn {

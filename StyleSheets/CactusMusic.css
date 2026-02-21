@@ -16,3 +16,8 @@
     color: white;
     cursor: pointer;
 }
+.button-row {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
