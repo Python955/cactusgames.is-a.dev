@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'headerfont';
+    src: url('../Fonts/Brush.ttf') format('truetype');
+}
+.brush {
+    font-family: 'headerfont', sans-serif;
+    color: black;
+}
+.button {
+    padding: 14px 36px;
+    font-size: 18px;
+    font-family: 'headerfont', sans-serif;
+    border-radius: 8px;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    cursor: pointer;
+}
