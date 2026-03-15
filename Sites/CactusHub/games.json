@@ -1,28 +1,16 @@
 {
   "games": [
     {
-      "name": "Cactus Runner",
-      "description": "Run through the desert and dodge obstacles.",
-      "exe": "https://cactusgames.is-a.dev/Sites/CactusHub/files/cactusrunner.exe",
-      "icon": "https://cactusgames.is-a.dev/Sites/CactusHub/icons/cactusrunner.png",
+      "name": "Bugs",
+      "description": "A Cactus Origins game. Run away from the runers and don't get hit! This is the first game in the Cactus Hub. Survive 3 minutes to win!",
+      "exe": "https://cactusgames.is-a.dev/Sites/CactusHub/Games/CactusOrigins/bugsORIGIN.exe",
+      "icon": "https://cactusgames.is-a.dev/Sites/CactusHub/icons/CactusOrigins/bugsORIGIN.png",
       "background": {
-        "r": 120,
-        "g": 210,
-        "b": 95
+        "r": 64,
+        "g": 162,
+        "b": 179
       },
       "updated": 1710700000
-    },
-    {
-      "name": "Space Arena",
-      "description": "Fight enemies in space.",
-      "exe": "https://cactusgames.is-a.dev/Sites/CactusHub/files/spacearena.exe",
-      "icon": "https://cactusgames.is-a.dev/Sites/CactusHub/icons/spacearena.png",
-      "background": {
-        "r": 30,
-        "g": 30,
-        "b": 200
-      },
-      "updated": 1710600000
     }
   ]
 }
