@@ -1,0 +1,28 @@
+{
+  "games": [
+    {
+      "name": "Cactus Runner",
+      "description": "Run through the desert and dodge obstacles.",
+      "exe": "https://cactusgames.is-a.dev/Sites/CactusHub/files/cactusrunner.exe",
+      "icon": "https://cactusgames.is-a.dev/Sites/CactusHub/icons/cactusrunner.png",
+      "background": {
+        "r": 120,
+        "g": 210,
+        "b": 95
+      },
+      "updated": 1710700000
+    },
+    {
+      "name": "Space Arena",
+      "description": "Fight enemies in space.",
+      "exe": "https://cactusgames.is-a.dev/Sites/CactusHub/files/spacearena.exe",
+      "icon": "https://cactusgames.is-a.dev/Sites/CactusHub/icons/spacearena.png",
+      "background": {
+        "r": 30,
+        "g": 30,
+        "b": 200
+      },
+      "updated": 1710600000
+    }
+  ]
+}
