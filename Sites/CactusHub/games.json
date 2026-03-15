@@ -3,8 +3,10 @@
     {
       "name": "Bugs",
       "description": "A Cactus Origins game. Run away from the runers and don't get hit! This is the first game in the Cactus Hub. Survive 3 minutes to win!",
-      "exe": "https://cactusgames.is-a.dev/Sites/CactusHub/Games/CactusOrigins/BugsORIGIN.exe",
+      "exe": "https://cactusgames.is-a.dev/Sites/CactusHub/Games/CactusOrigins/Bugs/BugsORIGIN.exe",
       "icon": "https://cactusgames.is-a.dev/Sites/CactusHub/icons/CactusOrigins/BugsORIGIN.jpeg",
+      "extra rescources": true,
+      "rescources": "https://cactusgames.is-a.dev/Sites/CactusHub/Games/CactusOrigins/Bugs/recouces.zip",
       "background": {
         "r": 64,
         "g": 162,
