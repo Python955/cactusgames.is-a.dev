@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'headerfont';
+    src: url('../Fonts/Casual\ Simone.otf') format('opentype');
+}
+@font-face {
+    font-family: 'pfont';
+    src: url('../Fonts/Some\ Notes.otf') format('opentype');
+}
