@@ -17,5 +17,22 @@
       "OS": "Windows",
       "Owner": "Python955"
     }
-  ]
+  ,
+    {
+      "name": "Test",
+      "description": "test",
+      "exe": "https://github.com/Python955/cactusgames.is-a.dev/tree/florhamparkmc/Sites/CactusHub/Games/SteamSetup.exe",
+      "icon": "https://github.com/Python955/cactusgames.is-a.dev/blob/florhamparkmc/Sites/CactusHub/icons/null",
+      "extra rescources": false,
+      "background": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "updated": 1779647051,
+      "lastUpdate": 1779647051,
+      "OS": "Windows",
+      "Owner": "Python955"
+    }
+]
 }
